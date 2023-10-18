@@ -17,7 +17,7 @@ document.querySelector("#startHere").onclick = async () => {
 }
 
 const getTitle = (url) => {  
-    return fetch(`https://crossorigin.me/${url}`)
+    return fetch(`${url}`)
       .then((response) => response.text())
       .then((html) => {
         const doc = new DOMParser().parseFromString(html, "text/html");
