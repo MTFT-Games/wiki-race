@@ -26,5 +26,8 @@
             "https://en.wikipedia.org/*"
           ]
         }
-      ]
+      ],
+      "background": {
+        "service_worker": "scripts/service.js"
+      }
 }
