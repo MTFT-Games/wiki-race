@@ -14,13 +14,10 @@
         "128": "images/icon-128.png"
       },
     "permissions": [
-        "sidePanel",
         "tabs",
-        "webNavigation"
+        "webNavigation",
+        "storage"
     ],
-    "side_panel": {
-        "default_path": "sidepanel.html"
-    },
     "content_scripts": [
         {
           "js": ["scripts/content.js"],
