@@ -15,7 +15,8 @@
       },
     "permissions": [
         "sidePanel",
-        "tabs"
+        "tabs",
+        "webNavigation"
     ],
     "side_panel": {
         "default_path": "sidepanel.html"

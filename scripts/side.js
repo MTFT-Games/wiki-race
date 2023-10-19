@@ -12,9 +12,9 @@ document.querySelector("#startHere").onclick = async () => {
     document.querySelector("#Time").textContent = "Time: We'll figure this out later";
     endGoal = await getTitle("https://en.wikipedia.org/wiki/Special:Random");
     document.querySelector("#endGoal").textContent = "End point: " + endGoal;
-
-    // get a random end point and start timer with 5 seconds extra or as soon as focus leaves sidebar again
 }
+
+
 
 const getTitle = (url) => {  
     return fetch(`${url}`)

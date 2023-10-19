@@ -1,3 +1,5 @@
+let sidepanelTab;
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     // The callback for runtime.onMessage must return falsy if we're not sending a response
     (async () => {
@@ -9,10 +11,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         //   path: 'sidepanel.html',
         //   enabled: true
         // });
+        sidepanelTab = sender.tab;
       }
       if (message.type == 'start_here'){
           const title = (await getCurrentTab()).title;
         sendResponse({'title': title});
+
       }
     })();
     return true;
